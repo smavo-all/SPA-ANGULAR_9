@@ -10,14 +10,13 @@
 
 
 <div class="card-columns">
-
   <div class="card animated fadeIn fast" *ngFor="let heroe of heroes; let i = index">
     <!-- i = al numero que toma del arreglo -->
     <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre">
     <div class="card-body">
-      <h5 class="card-title">Nombre: {{heroe.nombre}}</h5>
-      <p class="card-text">{{ heroe.bio}}</p>
-      <p class="card-text"><small>Aparicion: {{heroe.aparicion}}</small></p>
+      <h5 class="card-title">Nombre: {{ heroe.nombre }}</h5>
+      <p class="card-text">{{ heroe.bio }}</p>
+      <p class="card-text"><small>Aparicion: {{ heroe.aparicion }}</small></p>
       <button (click)="verHeroe(heroe.idx)" type="button" class="btn btn-primary btn-block">Ver más...</button>
       <!--<a [routerLink]="['heroe',i]" class="btn btn-outline-primary">Ver más...</a>-->
     </div>
