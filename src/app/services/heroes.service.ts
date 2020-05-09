@@ -58,7 +58,7 @@ export class HeroesService{
     
 
     constructor(){
-        //console.log("Servicio V1.0 Heroes!!");
+        console.log("Servicio V1.0 Heroes!!");
     }
 
     getHeroes():Heroe[]{
@@ -68,7 +68,7 @@ export class HeroesService{
     getHeroe(idx:number){
       return this.heroes[idx];
     }
-/*
+
     buscarHeroes(termino:string){
       let heroesArr: Heroe[] = [];
       termino = termino.toLowerCase(); //valores en mayuscula o miniscula
@@ -84,7 +84,7 @@ export class HeroesService{
           }
       }
         return heroesArr;
-    }*/
+    }
 }
 
 export interface Heroe {
@@ -93,5 +93,5 @@ export interface Heroe {
   img: string;
   aparicion: string;
   casa: string;
-  //idx?: number;
+  idx?: number;
 }
