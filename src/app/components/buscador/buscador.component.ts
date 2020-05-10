@@ -26,9 +26,10 @@ export class BuscadorComponent implements OnInit {
     })
   }
 
+  /*
   verHeroe( idx:number ){
     //console.log(idx);
     this._router.navigate( ['/api/v1.0/heroe',idx] );
-  }
+  }*/
 
 }

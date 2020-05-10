@@ -12,7 +12,6 @@ const APP_ROUTES: Routes = [
     { path: 'api/v1.0/heroes', component: HeroesComponent },
     { path: 'api/v1.0/heroe/:id', component: HeroeComponent },
     { path: 'api/v1.0/buscar/:termino', component: BuscadorComponent },
-    
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
